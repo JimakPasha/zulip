@@ -355,23 +355,24 @@ html {
 
         font-family: "Inter", sans-serif;
 
-        font-size: 1.2rem;
-        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
         box-sizing: border-box;
         outline: none;
         color: hsl(0, 0%, 100%);
-        background-color: hsl(213, 23%, 25%);
+        background-color: #0d34be;
 
-        margin: 25px 0 5px;
+        margin: 22px 0 5px;
         height: 50px;
 
         border: none;
-        border-radius: 4px;
+        border-radius: 8px;
 
         transition: all 0.3s ease;
 
         &:hover {
-            background-color: hsl(213, 33%, 31%);
+            background-color: #1441de;
         }
 
         &:active {
@@ -461,34 +462,36 @@ html {
         input[type="password"],
         textarea,
         select {
-            padding: 10px 32px 10px 12px;
-            margin: 25px 0 5px;
+            background-color: #f9fafb;
+            padding: 12px 32px 12px 12px;
 
             font-family: "Inter", sans-serif;
-            font-size: 1.2rem;
-            line-height: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
             height: auto;
+            color: #667085;
 
-            width: 280px;
+            width: 382px;
 
-            border: 1px solid hsl(0, 0%, 87%);
+            border: 1px solid #d0d5dd;
             box-shadow: none;
-            border-radius: 4px;
+            border-radius: 8px;
 
             transition: border 0.3s ease;
 
             &:focus:invalid {
-                box-shadow: none;
                 color: hsl(0, 0%, 27%);
             }
 
             &:focus {
-                border: 1px solid hsl(0, 0%, 53%);
+                border: 1px solid hsla(239, 60%, 51%, 1);
+                box-shadow: 0px 0px 2px 2px #e0eaff;
             }
         }
 
         input[type="email"] {
-            margin-bottom: 10px;
+            margin-bottom: 24px;
         }
 
         label {
@@ -555,10 +558,10 @@ html {
         label.text-error {
             display: block;
 
-            top: 0;
-            right: 0;
+            top: 45px;
+            left: 0;
             text-align: right;
-            color: hsl(1.1, 44.7%, 50.4%);
+            color: #b42318;
             font-size: 0.7em;
             font-weight: 600;
             padding-left: 0;
@@ -792,18 +795,20 @@ button#register_auth_button_gitlab {
 
 .split-view .actions a,
 .back-to-login {
-    color: hsl(164, 100%, 23%);
+    position: relative;
+    color: #344054;
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.8em;
-    line-height: 1.5;
+    font-size: 10px;
+    line-height: 14px;
     vertical-align: top;
+    border-bottom: 1px solid #d6d9dd;
 
-    transition: color 0.2s ease;
-
+    transition: all 0.2s ease;
+    
     &:hover {
-        text-decoration: none;
-        color: hsl(156, 62%, 61%);
+        border-color: #0d34be;
+        color: #0d34be;
     }
 }
 
