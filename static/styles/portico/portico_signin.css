@@ -372,7 +372,7 @@ html {
         transition: all 0.3s ease;
 
         &:hover {
-            background-color: hsl(213, 33%, 31%);
+            background-color: #1441de;
         }
 
         &:active {
@@ -481,12 +481,12 @@ html {
             transition: border 0.3s ease;
 
             &:focus:invalid {
-                box-shadow: none;
                 color: hsl(0, 0%, 27%);
             }
 
             &:focus {
-                border: 1px solid hsl(0, 0%, 53%);
+                border: 1px solid hsla(239, 60%, 51%, 1);
+                box-shadow: 0px 0px 2px 2px #e0eaff;
             }
         }
 
@@ -558,10 +558,10 @@ html {
         label.text-error {
             display: block;
 
-            top: -20px;
-            right: 0px;
+            top: 45px;
+            left: 0;
             text-align: right;
-            color: hsl(1.1, 44.7%, 50.4%);
+            color: #b42318;
             font-size: 0.7em;
             font-weight: 600;
             padding-left: 0;
@@ -795,18 +795,20 @@ button#register_auth_button_gitlab {
 
 .split-view .actions a,
 .back-to-login {
-    color: #000;
+    position: relative;
+    color: #344054;
     text-decoration: none;
     font-weight: 600;
     font-size: 10px;
     line-height: 14px;
     vertical-align: top;
+    border-bottom: 1px solid #d6d9dd;
 
-    transition: color 0.2s ease;
-
+    transition: all 0.2s ease;
+    
     &:hover {
-        text-decoration: none;
-        color: hsl(156, 62%, 61%);
+        border-color: #0d34be;
+        color: #0d34be;
     }
 }
 
