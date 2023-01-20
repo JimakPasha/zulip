@@ -658,7 +658,7 @@ li.topic-list-item {
         width: 100%;
         left: 0.5em;
         right: 0.5em;
-        opacity: 0.5;
+        opacity: 1;
     }
 
     span::before,
@@ -671,11 +671,11 @@ li.topic-list-item {
     }
 
     span::before {
-        margin-right: 0.5em;
+        margin-right: 1.3em;
     }
 
     span::after {
-        margin-left: 0.5em;
+        margin-left: 1.3em;
     }
 }
 

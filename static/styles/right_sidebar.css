@@ -173,8 +173,8 @@ $user_status_emoji_width: 24px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        opacity: 0.75;
         font-size: 90%;
+        color: #667085;
     }
 
     span.status-text:not(:empty) {
@@ -233,7 +233,7 @@ $user_status_emoji_width: 24px;
     }
 
     #user_filter_icon {
-        opacity: 0.5;
+        opacity: 1;
         margin-right: 5px;
 
         &:hover {

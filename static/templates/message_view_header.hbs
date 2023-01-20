@@ -4,7 +4,9 @@
 </a>
 <div class="divider only-visible-for-spectators">|</div>
 <a class="sub_count no-style tippy-zulip-tooltip hidden-for-spectators" data-tippy-content="{{sub_count_tooltip_text}}" data-tippy-placement="bottom" href="{{stream_settings_link}}">
-    <i class="fa fa-user-o"></i>{{formatted_sub_count}}
+    <i>
+        <img src="/static/images/senla/count-users.svg" alt="count-users">
+    </i>{{formatted_sub_count}}
 </a>
 <span class="narrow_description navbar-click-opens-search rendered_markdown">
     {{#if rendered_narrow_description}}
@@ -18,4 +20,8 @@
     {{> navbar_icon_and_title }}
 </span>
 {{/if}}
-<span class="search_icon search_closed" role="button"><i class="fa fa-search" aria-hidden="true"></i></span>
+<span class="search_icon search_closed" role="button">
+    <i aria-hidden="true">
+        <img src="/static/images/senla/search-stream.svg" alt="search-stream">
+    </i>
+</span>

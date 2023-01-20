@@ -183,10 +183,10 @@ function render_date_span(
     $elem.text("");
     if (rendered_time_above !== undefined) {
         $elem.append(
-            $("<i>").addClass(["date-direction", "fa", "fa-caret-up"]),
+            $("<img>").addClass(["arrow-up__img date-direction", "fa", "fa-caret-up"]).attr('src', '/static/images/senla/arrow-up.svg').attr('alt', 'arrow-up'),
             _.escape(rendered_time_above.time_str),
             $("<hr>").addClass("date-line"),
-            $("<i>").addClass(["date-direction", "fa", "fa-caret-down"]),
+            $("<img>").addClass(["date-direction", "fa", "fa-caret-down"]).attr('src', '/static/images/senla/arrow-down.svg').attr('alt', 'arrow-down'),
             _.escape(rendered_time.time_str),
         );
         return $elem;
