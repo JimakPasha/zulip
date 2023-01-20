@@ -317,7 +317,7 @@ p.n-margin {
 }
 
 #top_navbar {
-    border-bottom: 1px solid hsla(0, 0%, 0%, 0.2);
+    border-bottom: 1px solid #d0d5dd;
 }
 
 #navbar_alerts_wrapper {
@@ -552,6 +552,7 @@ p.n-margin {
     }
 
     .column-middle {
+        background-color: #fff;
         min-height: 100%;
 
         .column-middle-inner {
@@ -708,7 +709,7 @@ strong {
 
 .sidebar-title {
     color: hsl(0, 0%, 43%);
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 700;
     display: inline;
     letter-spacing: 0.051em;
@@ -1046,7 +1047,9 @@ td.pointer {
 }
 
 .message_controls {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
     position: absolute;
     top: -1px;
     right: -56px;
@@ -1091,7 +1094,11 @@ td.pointer {
 
     > .reaction_button {
         &:hover {
-            color: hsl(200, 100%, 40%);
+            svg {
+                path {
+                    stroke: #000;
+                }
+            }
         }
     }
 
@@ -1175,6 +1182,11 @@ td.pointer {
     &:focus-within .message_failed {
         .empty-star:hover {
             cursor: pointer;
+            svg {
+                path {
+                    stroke: #000;
+                }
+            }
         }
 
         > div {
@@ -1203,8 +1215,6 @@ td.pointer {
 
 .message_list {
     .recipient_row {
-        border-bottom: 1px solid hsl(0, 0%, 88%);
-        margin-bottom: 10px;
     }
 }
 
@@ -1415,7 +1425,7 @@ td.pointer {
     align-items: center;
     justify-content: space-between;
     border-right: 1px solid hsl(0, 0%, 88%);
-    background-color: hsl(0, 0%, 88%);
+    background-color: #d0d5dd;
 }
 
 .group_mention .messagebox,
@@ -1459,7 +1469,8 @@ td.pointer {
     }
 
     .messagebox-content {
-        padding-bottom: 1px;
+        padding-bottom: 10px;
+        margin-bottom: 1px;
     }
 }
 
@@ -1510,7 +1521,9 @@ td.pointer {
 }
 
 .actions_hover:hover {
-    color: hsl(200, 100%, 40%);
+    circle {
+        fill: #000;
+    }
 }
 
 .always_visible_topic_edit,
@@ -1785,7 +1798,7 @@ div.focused_table {
 }
 
 .messagebox-content {
-    padding: 4px 115px 1px 10px;
+    padding: 4px 115px 10px 10px;
 }
 
 .bookend {
@@ -1826,14 +1839,14 @@ div.focused_table {
 }
 
 .top-navbar-border {
-    border-right: 1px solid hsl(0, 0%, 88%);
-    border-left: 1px solid hsl(0, 0%, 88%);
+    border-right: 1px solid #d0d5dd;
+    border-left: 1px solid #d0d5dd;
 }
 
 .search_icon {
     /* These rules match the .dropdown-toggle CSS for the gear menu. */
     color: inherit;
-    opacity: 0.5;
+    opacity: 1;
     text-decoration: none;
 
     &:hover {
@@ -1926,7 +1939,7 @@ div.focused_table {
     .narrow_description {
         background: none;
         font-size: 14px;
-        color: hsl(0, 0%, 40%);
+        color: #667085;
         font-weight: 400;
         line-height: 20px;
     }
@@ -1948,7 +1961,7 @@ div.focused_table {
             position: absolute;
             top: 25%;
             height: 50%;
-            color: hsl(0, 0%, 88%);
+            color: #98a2b3;
             font-size: 20px;
             @media (width < $sm_min) {
                 top: 10%;
@@ -1994,7 +2007,7 @@ div.focused_table {
 
     .search_closed {
         overflow: visible;
-        flex: 0; /* makes sure search icon is always visible */
+        /* flex: 0; makes sure search icon is always visible */
 
         cursor: pointer;
         font-size: 20px;
@@ -2689,16 +2702,16 @@ textarea.invitee_emails {
         display: inline-block;
         vertical-align: middle;
         width: 33%;
-        border-top: 1px solid hsl(0, 0%, 88%);
+        border-top: 2px solid hsl(0, 0%, 88%);
         border-bottom: 1px solid hsl(0, 0%, 100%);
-        margin: 0 5px;
+        margin: 0 16px;
     }
 }
 
 .sub-unsub-message span,
 .date_row span {
     display: block;
-    padding: 4px;
+    padding: 0 4px 4px 4px;
     overflow: hidden;
     text-transform: uppercase;
     font-size: 0.8em;
@@ -2706,7 +2719,7 @@ textarea.invitee_emails {
 
 .sub-unsub-message .stream-status,
 .date_row span {
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .sub-unsub-message span {
@@ -2724,19 +2737,19 @@ textarea.invitee_emails {
     vertical-align: middle;
     width: 50%;
     height: 0;
-    border-top: 1px solid hsl(0, 0%, 88%);
+    border-top: 2px solid hsl(0, 0%, 88%);
     border-bottom: 1px solid hsl(0, 0%, 100%);
 }
 
 .sub-unsub-message span::before,
 .date_row span::before {
-    right: 0.5em;
+    right: 1.5em;
     margin-left: -50%;
 }
 
 .sub-unsub-message span::after,
 .date_row span::after {
-    left: 0.5em;
+    left: 1.5em;
     margin-right: -50%;
 }
 

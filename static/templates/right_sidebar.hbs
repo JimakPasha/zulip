@@ -6,9 +6,10 @@
                   id='userlist-title' data-tippy-content="{{t 'Search people' }} (w)">
                     {{t 'USERS' }}
                 </h4>
-                <i id="user_filter_icon" class="fa fa-search"
+                <i id="user_filter_icon"
                   aria-hidden="true" aria-label="{{t 'Search people' }}"
                   data-tippy-content="{{t 'Search people' }} (w)">
+                  <img src="/static/images/senla/search-users.svg" alt="search-users">
                 </i>
             </div>
             <div class="input-append notdisplayed" id="user_search_section">
@@ -27,7 +28,9 @@
             <a id="invite-user-link" href="#invite"><i class="fa fa-user-plus" aria-hidden="true"></i>{{t 'Invite more users' }}</a>
             {{/if}}
             <a id="sidebar-keyboard-shortcuts" data-overlay-trigger="keyboard-shortcuts" class="hidden-for-spectators">
-                <i class="fa fa-keyboard-o fa-2x tippy-zulip-tooltip" id="keyboard-icon" data-tooltip-template-id="keyboard-icon-tooltip"></i>
+                <i class="fa fa-2x tippy-zulip-tooltip" id="keyboard-icon" data-tooltip-template-id="keyboard-icon-tooltip">
+                    <img class="sidebar-keyboard__img" src="/static/images/senla/keyboard.svg" alt="keyboard">
+                </i>
                 <template id="keyboard-icon-tooltip">{{t 'Keyboard shortcuts' }} <span class="hotkey-hint">(?)</span></template>
             </a>
             <div class="only-visible-for-spectators">
