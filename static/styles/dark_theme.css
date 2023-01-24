@@ -9,7 +9,7 @@
     color-scheme: dark;
 
     body {
-        color: hsl(236, 33%, 90%);
+        color: #f2f4f7;
     }
 
     .placeholder {
@@ -148,11 +148,14 @@
     .column-right .right-sidebar,
     #groups_overlay .right,
     #subscription_overlay .right,
-    #settings_page .right,
-    #streams_header,
-    .private_messages_container {
-        background-color: hsl(212, 28%, 18%);
+    #settings_page .right {
+    background-color: #272f3a;
     }
+
+    .private_messages_container,
+    #streams_header {
+        background-color: #1a222c;
+        }
 
     #scroll-to-bottom-button-container {
         background: transparent;
@@ -243,6 +246,7 @@
     .stream_name_search_section,
     .group_name_search_section,
     .column-right .right-sidebar {
+        background-color: #1a222c;
         border-color: hsla(0, 0%, 0%, 0.2);
     }
 
@@ -326,10 +330,10 @@
 
     .rendered_markdown button,
     .new-style .button {
-        background-color: hsla(0, 0%, 0%, 0.2);
+        background-color: #1d2939;
 
         &:not(.sea-green, .btn-danger, .btn-warning, .btn-link, .poll-vote) {
-            border-color: hsla(0, 0%, 0%, 0.6);
+            border-color: #344054;
             color: inherit;
         }
 
@@ -466,7 +470,7 @@
 
     .message-header-contents,
     .message_header_private_message .message-header-contents {
-        background-color: hsla(0, 0%, 0%, 0.2);
+        background-color: #111821;
         border-color: transparent;
     }
 
@@ -480,7 +484,7 @@
     .message_row,
     .draft-row .draft-info-box,
     .preview_message_area {
-        border-color: hsla(0, 0%, 0%, 0.2);
+        border: none;
     }
 
     .recipient_row {
@@ -511,7 +515,7 @@
 
     .spectator_narrow_login_button,
     .top-navbar-border {
-        border-color: hsla(0, 0%, 0%, 0.6);
+        border-color: #344054;
     }
 
     #message_view_header .sub_count {

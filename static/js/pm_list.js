@@ -32,8 +32,7 @@ export function set_count(count) {
 
 function close() {
     private_messages_collapsed = true;
-    $("#toggle_private_messages_section_icon").removeClass("fa-caret-down");
-    $("#toggle_private_messages_section_icon").addClass("fa-caret-right");
+    $("#toggle_private_messages_section_icon-img").addClass("down");
 
     update_private_messages();
 }
@@ -100,8 +99,7 @@ export function update_private_messages() {
 
 export function expand() {
     private_messages_collapsed = false;
-    $("#toggle_private_messages_section_icon").addClass("fa-caret-down");
-    $("#toggle_private_messages_section_icon").removeClass("fa-caret-right");
+    $("#toggle_private_messages_section_icon-img").removeClass("down");
     update_private_messages();
 }
 
