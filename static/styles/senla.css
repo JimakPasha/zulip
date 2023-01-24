@@ -1,3 +1,7 @@
+/* common */
+
+/* ======================= */
+
 .zero-pm-unreads {
     margin-bottom: 8px;
 }
@@ -102,4 +106,57 @@
     display: none;
 }
 
+#toggle_private_messages_section_icon-img.down {
+    transform: rotate(180deg);
+}
+
 /* ======================= */
+/* color icons */
+
+.dark-theme {
+    .toggle-colors-icon {
+        display: none;
+    }
+
+    .toggle-colors-icon-dark {
+        display: inline-block;
+    }
+}
+
+.toggle-colors-icon {
+    display: inline-block;
+}
+
+.toggle-colors-icon-dark {
+    display: none;
+}
+
+/* ======================= */
+/* dark theme */
+
+.dark-theme {
+    a {
+        color: #53b1fd;
+    }
+
+    .header-main.rightside-userlist#top_navbar {
+        background-color: #1a222c;
+    }
+
+    #message_view_header {
+        background-color: #1a222c;
+    }
+
+    #top_navbar {
+        border-color: #344054;
+    }
+
+    #compose-content {
+        background-color: #1a222c;
+        border-color: none;
+    }
+
+    #left_bar_compose_reply_button_big {
+        color: #98a2b3;
+    }
+}

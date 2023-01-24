@@ -2364,7 +2364,6 @@ nav {
         text-align: center;
 
         .nav-logo {
-            display: inline-block;
             vertical-align: top;
             margin-top: 8px;
             height: 25px;
