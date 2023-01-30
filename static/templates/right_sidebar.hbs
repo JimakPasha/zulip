@@ -26,7 +26,9 @@
         </div>
         <div class="right-sidebar-shortcuts">
             {{#if can_invite_others_to_realm}}
-            <a id="invite-user-link" href="#invite"><i class="fa fa-user-plus" aria-hidden="true"></i>{{t 'Invite more users' }}</a>
+            <a id="invite-user-link" href="#invite"><i aria-hidden="true">
+                <img src="/static/images/senla/invite-users.svg" alt="invite-users">
+            </i>{{t 'Invite more users' }}</a>
             {{/if}}
             <a id="sidebar-keyboard-shortcuts" data-overlay-trigger="keyboard-shortcuts" class="hidden-for-spectators">
                 <i class="fa fa-2x tippy-zulip-tooltip" id="keyboard-icon" data-tooltip-template-id="keyboard-icon-tooltip">

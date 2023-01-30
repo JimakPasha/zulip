@@ -110,6 +110,18 @@
     transform: rotate(180deg);
 }
 
+.search-stream-custom {
+    opacity: 0.7;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.settings-custom {
+    padding-right: 10px;
+}
+
 /* ======================= */
 /* color icons */
 
@@ -129,6 +141,16 @@
 
 .toggle-colors-icon-dark {
     display: none;
+}
+
+.move_message-custom {
+    padding-top: 2px;
+
+    &:hover {
+        path {
+            stroke: #000;
+        }
+    }
 }
 
 /* ======================= */
@@ -158,5 +180,44 @@
 
     #left_bar_compose_reply_button_big {
         color: #98a2b3;
+    }
+
+    .message_controls {
+        .reaction_button {
+            &:hover {
+                svg {
+                    path {
+                        stroke: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .messagebox {
+        &:hover .message_controls,
+        &:focus-within .message_controls,
+        &:hover .message_failed,
+        &:focus-within .message_failed {
+            .empty-star:hover {
+                svg {
+                    path {
+                        stroke: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    .actions_hover:hover {
+        circle {
+            fill: #fff;
+        }
+    }
+
+    .move_message-custom:hover {
+        path {
+            stroke: #fff;
+        }
     }
 }
