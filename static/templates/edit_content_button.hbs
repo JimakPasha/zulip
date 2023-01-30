@@ -1,7 +1,13 @@
 {{#if is_content_editable}}
 <i class="fa fa-pencil edit_content_button edit_message_button" role="button" tabindex="0" aria-label="{{t 'Edit message' }} (e)" data-tippy-content="{{#tr}}Edit message{{/tr}} (e)"></i>
 {{else if can_move_message}}
-<i class="fa fa-arrows move_message_button edit_message_button" role="button" tabindex="0" aria-label="{{t 'Move message' }} (m)" data-tippy-content="{{#tr}}Move message{{/tr}} (m)"></i>
+<i class="move_message_button edit_message_button" role="button" tabindex="0" aria-label="{{t 'Move message' }} (m)" data-tippy-content="{{#tr}}Move message{{/tr}} (m)">
+<div class="move_message-custom">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2.91666 5.25002L1.16666 7.00002M1.16666 7.00002L2.91666 8.75002M1.16666 7.00002H12.8333M5.24999 2.91669L6.99999 1.16669M6.99999 1.16669L8.74999 2.91669M6.99999 1.16669V12.8334M8.74999 11.0834L6.99999 12.8334M6.99999 12.8334L5.24999 11.0834M11.0833 5.25002L12.8333 7.00002M12.8333 7.00002L11.0833 8.75002" stroke="#667085" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</div>
+</i>
 {{else}}
 <i class="fa fa-file-code-o view_source_button edit_message_button" role="button" tabindex="0" aria-label="{{t 'View message source' }} (e)" data-tippy-content="{{#tr}}View message source{{/tr}} (e)" data-message-id="{{msg_id}}"></i>
 {{/if}}
