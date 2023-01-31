@@ -562,7 +562,7 @@
     .popover,
     .popover-title,
     .popover-content {
-        background-color: hsl(212, 32%, 14%);
+        background-color: #141a22;
     }
 
     .dropdown-menu a {
@@ -573,7 +573,7 @@
     .popover hr,
     hr {
         color: hsl(212, 28%, 18%);
-        opacity: 0.2;
+        opacity: 0.4;
     }
 
     #gear_menu_about_zulip {
@@ -599,7 +599,7 @@
 
     .nav .dropdown-menu::after,
     .popover.bottom .arrow {
-        border-bottom-color: hsl(235, 18%, 7%);
+        border-bottom-color: #141A22;
     }
 
     .popover.left .arrow {
