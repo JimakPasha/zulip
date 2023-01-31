@@ -34,8 +34,11 @@
                     <div id="searchbox_legacy">
                         <form id="searchbox_form" class="navbar-search">
                             <div id="search_arrows" class="input-append">
-                                <span class="search_icon search_open" ><i class="fa fa-search" aria-hidden="true"></i></span>
-                                <input class="search-query input-block-level home-page-input" id="search_query" type="text" placeholder="{{t 'Search' }}"
+                                <span class="search-stram-custom search_icon search_open" >
+                                    <img class="toggle-colors-icon" src="/static/images/senla/search-stream-input.svg" alt="search-stream">
+                                    <img class="toggle-colors-icon-dark" src="/static/images/senla/search-stream-input-dark.svg" alt="search-stream">
+                                </span>
+                                <input class="search-query-custom search-query input-block-level home-page-input" id="search_query" type="text" placeholder="{{t 'Search' }}"
                                   autocomplete="off" aria-label="{{t 'Search' }}" title="{{t 'Search' }} (/)"/>
                                 <button class="btn search_button" type="button" id="search_exit" aria-label="{{t 'Exit search' }}"><i class="fa fa-remove" aria-hidden="true"></i></button>
                             </div>
