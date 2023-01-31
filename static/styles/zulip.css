@@ -2287,7 +2287,7 @@ div.focused_table {
 .nav .dropdown-menu {
     left: auto;
     right: 0;
-    top: 30px;
+    top: 40px;
     /* Match the width of the right sidebar so that we don't have
        the presence dots distracting you when looking at this. */
     min-width: 240px;
@@ -2301,7 +2301,7 @@ div.focused_table {
         right: 19px;
         display: inline-block;
         border-right: 7px solid transparent;
-        border-bottom: 7px solid hsl(0, 0%, 67%);
+        border-bottom: 7px solid #fff;
         border-left: 7px solid transparent;
         content: "";
         z-index: 10;

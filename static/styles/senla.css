@@ -122,6 +122,12 @@
     padding-right: 10px;
 }
 
+.invite-user-link-custom {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
 /* ======================= */
 /* color icons */
 
@@ -152,6 +158,7 @@
         }
     }
 }
+
 
 /* ======================= */
 /* dark theme */
@@ -220,4 +227,17 @@
             stroke: #fff;
         }
     }
+
+    .gear-menu-link path {
+        stroke: #fff;
+    }
+}
+
+/* ======================= */
+/* gear menu */
+
+.gear-menu-link {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
 }
