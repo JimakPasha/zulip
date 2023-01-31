@@ -841,11 +841,11 @@ strong {
     .active > a {
         color: hsl(0, 0%, 100%);
         text-decoration: none;
-        background-color: hsl(200, 100%, 38%);
+        background-color: #0d34be;
         background-image: linear-gradient(
             to bottom,
-            hsl(200, 100%, 40%),
-            hsl(200, 100%, 35%)
+            #0d34be,
+            #0d34be
         );
         outline: 0;
 
@@ -2088,7 +2088,6 @@ div.focused_table {
         border-radius: 0;
         font-family: "Inter", sans-serif;
         font-weight: 300;
-        line-height: $header_height;
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
